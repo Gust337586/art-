@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้า</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>มาซื้อของวาดรูป</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="products.html">สินค้า</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+                <li><a href="gallery.html">แกลเลอรี่</a></li>
+                <li><a href="faq.html">คำถามที่พบบ่อย</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>สินค้าอุปกรณ์วาดรูป</h2>
+        <p>เลือกซื้อสินค้าที่คุณต้องการจากรายการสินค้าของเรา!</p>
+
+        <div class="product-grid">
+            <!-- สินค้า -->
+            <div class="product">
+                <img src="https://ae01.alicdn.com/kf/S09e33fcc4dcb4ef0afbca1e9ed634af8W.jpg_640x640q90.jpg" alt="แปรงสี" class="product-img">
+                <h3>แปรงสี</h3>
+                <p>แปรงสีคุณภาพสูงสำหรับการวาดภาพทุกประเภท</p>
+                <p class="price">ราคา: 250 บาท</p>
+                <button class="btn-order" onclick="addToCart('แปรงสี', 250)">🛒 สั่งซื้อ</button>
+            </div>
+
+            <div class="product">
+                <img src="https://down-th.img.susercontent.com/file/e82ab9a11809ffe857c6dfda2f1eee19" alt="สีน้ำมัน" class="product-img">
+                <h3>สีน้ำมัน</h3>
+                <p>สีคุณภาพเยี่ยมสำหรับการวาดภาพสีน้ำมัน</p>
+                <p class="price">ราคา: 500 บาท</p>
+                <button class="btn-order" onclick="addToCart('สีน้ำมัน', 500)">🛒 สั่งซื้อ</button>
+            </div>
+
+            <div class="product">
+                <img src="https://stationerymine.com/media/catalog/product/cache/826f43077cb9f660d2ab67e041c2bdfc/1/0/105754_rns_paper_200g_smooth_02.jpg" alt="กระดาษวาดรูป" class="product-img">
+                <h3>กระดาษวาดรูป</h3>
+                <p>กระดาษสำหรับวาดภาพทุกประเภท</p>
+                <p class="price">ราคา: 400 บาท</p>
+                <button class="btn-order" onclick="addToCart('กระดาษวาดรูป', 400)">🛒 สั่งซื้อ</button>
+            </div>
+
+            <!-- สินค้า 4 -->
+            <div class="product">
+                <img src="https://inwfile.com/s-cs/ivve3d.jpg" alt="สินค้า 4" class="product-img">
+                <h3>น้ำมันลิดสึด</h3>
+                <p>เป็นสารส่งสีในสีน้ำมัน และเป็นสารอำนวยการทาสี</p>
+                <p class="price">ราคา: 300 บาท</p>
+                <button class="btn-order" onclick="addToCart('น้ำมันลิดสึด', 400)">🛒 สั่งซื้อ</button>
+            </div>
+
+             <!-- สินค้า 5 -->
+             <div class="product">
+                <img src="https://down-th.img.susercontent.com/file/7cf2916e48ae467cd7316ebbeb143850">
+                <h3>ผ้า</h3>
+                <p>ผ้าเช็ดพู่กัน</p>
+                <p class="price">ราคา: 50 บาท</p>
+                <button class="btn-order" onclick="addToCart('ผ้า', 50)">🛒 สั่งซื้อ</button>
+            </div>
+
+            <!-- สินค้า 6 -->
+            <div class="product">
+                <img src="https://inwfile.com/s-cs/sh8pal.jpg" alt="สินค้า 6" class="product-img">
+                <h3>เกรียงผสมสี ครบsetทุกขนาด</h3>
+                <p>เกรียงผสมสี</p>
+                <p class="price">ราคา: 350 บาท</p>
+                <button class="btn-order" onclick="addToCart('เกรียงผสมสี ครบsetทุกขนาด', 350)">🛒 สั่งซื้อ</button>
+            </div>
+
+            <!-- สินค้า 7 -->
+            <div class="product">
+                <img src="https://img.th.my-best.com/product_images/0d98b0379e78924bfe0ddf1c529e0f8b.png?ixlib=rails-4.3.1&q=70&lossless=0&w=800&h=800&fit=clip&s=a2ecfc07e0e9b89c7204c014980df7cc" alt="สินค้า 7" class="product-img">
+                <h3>ขาตั้งไม้ ขาตั้งวาดรูป</h3>
+                <p>ใช้เพื่อปรับท่าทางตอนวาดรูปให้ไม่เมื่อย</p>
+                <p class="price">ราคา: 2400 บาท</p>
+                <button class="btn-order" onclick="addToCart('ขาตั้งไม้ ขาตั้งวาดรูป', 2400)">🛒 สั่งซื้อ</button>
+            </div>
+
+            <!-- สินค้า 8 -->
+            <div class="product">
+                <img src="https://inwfile.com/s-ft/wy9w18.jpg" alt="สินค้า 8" class="product-img">
+                <h3>ดินสอ</h3>
+                <p>ใช้ร่าง วาด เขียน</p>
+                <p class="price">ราคา: 150 บาท</p>
+                <button class="btn-order" onclick="addToCart('ดินสอ', 150)">🛒 สั่งซื้อ</button>
+            </div>
+
+                <!-- สินค้า 9 -->
+            <div class="product">
+                <img src="https://stationerymine.com/media/catalog/product/cache/cf3f2243ef4940fd5c66f2ff035145ac/f/s/fs031473_pentel_hi-polymer_eraser_zeh10.jpg" alt="สินค้า 9" class="product-img">
+                <h3>ยางลบ</h3>
+                <p>ลบคำผิด หรือวาดผิด</p>
+                <p class="price">ราคา:10-40 บาท</p>
+                <button class="btn-order" onclick="addToCart('ยางลบ', 10-40)">🛒 สั่งซื้อ</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- ปุ่มตะกร้าสินค้า -->
+    <div class="cart-button" onclick="openCart()">
+        🛒 ตะกร้า (<span id="cart-count">0</span>)
+    </div>
+
+    <!-- รายการสินค้าในตะกร้า -->
+    <div id="cart" class="cart">
+        <h3>ตะกร้าสินค้า</h3>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">รวม: 0 บาท</p>
+        <button class="btn-clear" onclick="clearCart()">🗑 ล้างตะกร้า</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ร้านอุปกรณ์วาดรูป | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        let cart = [];
+        
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            updateCart();
+        }
+
+        function updateCart() {
+            let cartItems = document.getElementById("cart-items");
+            let cartCount = document.getElementById("cart-count");
+            let cartTotal = document.getElementById("cart-total");
+
+            cartItems.innerHTML = "";
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                total += item.price;
+                let li = document.createElement("li");
+                li.textContent = `${item.name} - ${item.price} บาท`;
+                cartItems.appendChild(li);
+            });
+
+            cartCount.textContent = cart.length;
+            cartTotal.textContent = `รวม: ${total} บาท`;
+        }
+
+        function openCart() {
+            document.getElementById("cart").classList.toggle("show");
+        }
+
+        function clearCart() {
+            cart = [];
+            updateCart();
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .btn-order {
+            background-color: #ff6f00;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn-order:hover {
+            background-color: #e65c00;
+        }
+
+        .cart-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cart {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart.show {
+            display: block;
+        }
+
+        .btn-clear {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn-clear:hover {
+            background-color: darkred;
+        }
+    </style>
+</body>
+</html>
